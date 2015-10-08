@@ -47,6 +47,7 @@ namespace ActiveDirectoryQuery
                 Console.WriteLine("\tSid:             " + $"{user.Sid}");
                 Console.WriteLine("\tIsSecurityGroup: " + $"{user.UserPrincipalName}");
                 Console.WriteLine("\tDescription:     " + $"{user.Description}");
+                Console.WriteLine("\tIsLockedOut:     " + $"{user.IsAccountLockedOut()}");
             }
 
             if (_showMembership)

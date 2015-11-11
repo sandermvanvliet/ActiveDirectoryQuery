@@ -12,9 +12,6 @@ namespace ActiveDirectoryQuery
                     (GroupFindOptions options) => FindGroup(options),
                     (UserFindOptions options) => FindUser(options),
                     errors => 1);
-
-            Console.WriteLine("Done. Press enter to exit");
-            Console.ReadLine();
         }
 
         private static int FindUser(UserFindOptions options)
